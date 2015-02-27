@@ -1,7 +1,5 @@
 class Robot:
-    '''Represents a robot,
-    
-    with a name.'''
+    '''Represents a robot, with a name.'''
     # A class variable, counting the number of robots
     population = 0
 
@@ -36,7 +34,9 @@ class Robot:
         '''Prints the current population.'''
         print 'We have {:d} robots.'.format(cls.population)
 
+print Robot.__doc__
 droid1 = Robot('R2-D2')
+print Robot.say_hi.__doc__
 droid1.say_hi()
 Robot.how_many()
 
@@ -47,8 +47,9 @@ Robot.how_many()
 print '\nRobots can do some work here.\n'
 
 print 'Robots have finished their work. So let\'s destroy them.'
+print Robot.die.__doc__
 droid1.die()
+print Robot.die.__doc__
 droid2.die()
 
 Robot.how_many()
-Robot.doc
